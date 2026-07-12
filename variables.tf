@@ -113,10 +113,10 @@ EOT
       ttl                 = number
       name                = optional(string) # Default: "@"
       tags                = optional(map(string))
-      record = object({
+      record = list(object({
         exchange   = string
         preference = number
-      })
+      }))
     })))
     private_dns_ptr_records = optional(map(object({
       name                = string
@@ -130,21 +130,21 @@ EOT
       resource_group_name = string
       ttl                 = number
       tags                = optional(map(string))
-      record = object({
+      record = list(object({
         port     = number
         priority = number
         target   = string
         weight   = number
-      })
+      }))
     })))
     private_dns_txt_records = optional(map(object({
       name                = string
       resource_group_name = string
       ttl                 = number
       tags                = optional(map(string))
-      record = object({
+      record = list(object({
         value = string
-      })
+      }))
     })))
     private_dns_zone_virtual_network_links = optional(map(object({
       name                 = string
