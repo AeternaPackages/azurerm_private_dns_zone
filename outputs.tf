@@ -1,4 +1,9 @@
 # --- azurerm_private_dns_zone ---
+output "private_dns_zones_id" {
+  description = "Map of id values across all private_dns_zones, keyed the same as var.private_dns_zones"
+  value       = module.private_dns_zones.private_dns_zones_id
+}
+
 output "private_dns_zones_max_number_of_record_sets" {
   description = "Map of max_number_of_record_sets values across all private_dns_zones, keyed the same as var.private_dns_zones"
   value       = module.private_dns_zones.private_dns_zones_max_number_of_record_sets
@@ -40,6 +45,11 @@ output "private_dns_zones_tags" {
 }
 
 # --- azurerm_private_dns_a_record ---
+output "private_dns_a_records_id" {
+  description = "Map of id values across all private_dns_a_records, keyed the same as var.private_dns_a_records"
+  value       = module.private_dns_a_records.private_dns_a_records_id
+}
+
 output "private_dns_a_records_fqdn" {
   description = "Map of fqdn values across all private_dns_a_records, keyed the same as var.private_dns_a_records"
   value       = module.private_dns_a_records.private_dns_a_records_fqdn
@@ -76,6 +86,11 @@ output "private_dns_a_records_zone_name" {
 }
 
 # --- azurerm_private_dns_aaaa_record ---
+output "private_dns_aaaa_records_id" {
+  description = "Map of id values across all private_dns_aaaa_records, keyed the same as var.private_dns_aaaa_records"
+  value       = module.private_dns_aaaa_records.private_dns_aaaa_records_id
+}
+
 output "private_dns_aaaa_records_fqdn" {
   description = "Map of fqdn values across all private_dns_aaaa_records, keyed the same as var.private_dns_aaaa_records"
   value       = module.private_dns_aaaa_records.private_dns_aaaa_records_fqdn
@@ -112,6 +127,11 @@ output "private_dns_aaaa_records_zone_name" {
 }
 
 # --- azurerm_private_dns_cname_record ---
+output "private_dns_cname_records_id" {
+  description = "Map of id values across all private_dns_cname_records, keyed the same as var.private_dns_cname_records"
+  value       = module.private_dns_cname_records.private_dns_cname_records_id
+}
+
 output "private_dns_cname_records_fqdn" {
   description = "Map of fqdn values across all private_dns_cname_records, keyed the same as var.private_dns_cname_records"
   value       = module.private_dns_cname_records.private_dns_cname_records_fqdn
@@ -148,6 +168,11 @@ output "private_dns_cname_records_zone_name" {
 }
 
 # --- azurerm_private_dns_mx_record ---
+output "private_dns_mx_records_id" {
+  description = "Map of id values across all private_dns_mx_records, keyed the same as var.private_dns_mx_records"
+  value       = module.private_dns_mx_records.private_dns_mx_records_id
+}
+
 output "private_dns_mx_records_fqdn" {
   description = "Map of fqdn values across all private_dns_mx_records, keyed the same as var.private_dns_mx_records"
   value       = module.private_dns_mx_records.private_dns_mx_records_fqdn
@@ -184,6 +209,11 @@ output "private_dns_mx_records_zone_name" {
 }
 
 # --- azurerm_private_dns_ptr_record ---
+output "private_dns_ptr_records_id" {
+  description = "Map of id values across all private_dns_ptr_records, keyed the same as var.private_dns_ptr_records"
+  value       = module.private_dns_ptr_records.private_dns_ptr_records_id
+}
+
 output "private_dns_ptr_records_fqdn" {
   description = "Map of fqdn values across all private_dns_ptr_records, keyed the same as var.private_dns_ptr_records"
   value       = module.private_dns_ptr_records.private_dns_ptr_records_fqdn
@@ -220,6 +250,11 @@ output "private_dns_ptr_records_zone_name" {
 }
 
 # --- azurerm_private_dns_srv_record ---
+output "private_dns_srv_records_id" {
+  description = "Map of id values across all private_dns_srv_records, keyed the same as var.private_dns_srv_records"
+  value       = module.private_dns_srv_records.private_dns_srv_records_id
+}
+
 output "private_dns_srv_records_fqdn" {
   description = "Map of fqdn values across all private_dns_srv_records, keyed the same as var.private_dns_srv_records"
   value       = module.private_dns_srv_records.private_dns_srv_records_fqdn
@@ -256,6 +291,11 @@ output "private_dns_srv_records_zone_name" {
 }
 
 # --- azurerm_private_dns_txt_record ---
+output "private_dns_txt_records_id" {
+  description = "Map of id values across all private_dns_txt_records, keyed the same as var.private_dns_txt_records"
+  value       = module.private_dns_txt_records.private_dns_txt_records_id
+}
+
 output "private_dns_txt_records_fqdn" {
   description = "Map of fqdn values across all private_dns_txt_records, keyed the same as var.private_dns_txt_records"
   value       = module.private_dns_txt_records.private_dns_txt_records_fqdn
@@ -292,6 +332,11 @@ output "private_dns_txt_records_zone_name" {
 }
 
 # --- azurerm_private_dns_zone_virtual_network_link ---
+output "private_dns_zone_virtual_network_links_id" {
+  description = "Map of id values across all private_dns_zone_virtual_network_links, keyed the same as var.private_dns_zone_virtual_network_links"
+  value       = module.private_dns_zone_virtual_network_links.private_dns_zone_virtual_network_links_id
+}
+
 output "private_dns_zone_virtual_network_links_name" {
   description = "Map of name values across all private_dns_zone_virtual_network_links, keyed the same as var.private_dns_zone_virtual_network_links"
   value       = module.private_dns_zone_virtual_network_links.private_dns_zone_virtual_network_links_name
