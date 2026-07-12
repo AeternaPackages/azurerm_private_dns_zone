@@ -5,7 +5,7 @@ locals {
     for k1, v1 in var.private_dns_zones : {
       for k2, v2 in coalesce(v1.private_dns_a_records, {}) :
       "${k1}/${k2}" => merge(v2, {
-        zone_name = module.private_dns_zones.private_dns_zones["${k1}"].name
+        zone_name = module.private_dns_zones.private_dns_zones_name["${k1}"]
       })
     }
   ]...)
@@ -14,7 +14,7 @@ locals {
     for k1, v1 in var.private_dns_zones : {
       for k2, v2 in coalesce(v1.private_dns_aaaa_records, {}) :
       "${k1}/${k2}" => merge(v2, {
-        zone_name = module.private_dns_zones.private_dns_zones["${k1}"].name
+        zone_name = module.private_dns_zones.private_dns_zones_name["${k1}"]
       })
     }
   ]...)
@@ -23,7 +23,7 @@ locals {
     for k1, v1 in var.private_dns_zones : {
       for k2, v2 in coalesce(v1.private_dns_cname_records, {}) :
       "${k1}/${k2}" => merge(v2, {
-        zone_name = module.private_dns_zones.private_dns_zones["${k1}"].name
+        zone_name = module.private_dns_zones.private_dns_zones_name["${k1}"]
       })
     }
   ]...)
@@ -32,7 +32,7 @@ locals {
     for k1, v1 in var.private_dns_zones : {
       for k2, v2 in coalesce(v1.private_dns_mx_records, {}) :
       "${k1}/${k2}" => merge(v2, {
-        zone_name = module.private_dns_zones.private_dns_zones["${k1}"].name
+        zone_name = module.private_dns_zones.private_dns_zones_name["${k1}"]
       })
     }
   ]...)
@@ -41,7 +41,7 @@ locals {
     for k1, v1 in var.private_dns_zones : {
       for k2, v2 in coalesce(v1.private_dns_ptr_records, {}) :
       "${k1}/${k2}" => merge(v2, {
-        zone_name = module.private_dns_zones.private_dns_zones["${k1}"].name
+        zone_name = module.private_dns_zones.private_dns_zones_name["${k1}"]
       })
     }
   ]...)
@@ -50,7 +50,7 @@ locals {
     for k1, v1 in var.private_dns_zones : {
       for k2, v2 in coalesce(v1.private_dns_srv_records, {}) :
       "${k1}/${k2}" => merge(v2, {
-        zone_name = module.private_dns_zones.private_dns_zones["${k1}"].name
+        zone_name = module.private_dns_zones.private_dns_zones_name["${k1}"]
       })
     }
   ]...)
@@ -59,7 +59,7 @@ locals {
     for k1, v1 in var.private_dns_zones : {
       for k2, v2 in coalesce(v1.private_dns_txt_records, {}) :
       "${k1}/${k2}" => merge(v2, {
-        zone_name = module.private_dns_zones.private_dns_zones["${k1}"].name
+        zone_name = module.private_dns_zones.private_dns_zones_name["${k1}"]
       })
     }
   ]...)
@@ -68,7 +68,7 @@ locals {
     for k1, v1 in var.private_dns_zones : {
       for k2, v2 in coalesce(v1.private_dns_zone_virtual_network_links, {}) :
       "${k1}/${k2}" => merge(v2, {
-        private_dns_zone_name = module.private_dns_zones.private_dns_zones["${k1}"].name
+        private_dns_zone_name = module.private_dns_zones.private_dns_zones_name["${k1}"]
       })
     }
   ]...)
