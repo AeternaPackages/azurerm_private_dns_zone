@@ -37,6 +37,251 @@ output "private_dns_zones_tags" {
 }
 
 
+# --- azurerm_private_dns_a_record ---
+output "private_dns_a_records" {
+  description = "All private_dns_a_record resources"
+  value       = module.private_dns_a_records.private_dns_a_records
+}
+output "private_dns_a_records_fqdn" {
+  description = "List of fqdn values across all private_dns_a_records"
+  value       = [for k, v in module.private_dns_a_records.private_dns_a_records : v.fqdn]
+}
+output "private_dns_a_records_name" {
+  description = "List of name values across all private_dns_a_records"
+  value       = [for k, v in module.private_dns_a_records.private_dns_a_records : v.name]
+}
+output "private_dns_a_records_records" {
+  description = "List of records values across all private_dns_a_records"
+  value       = [for k, v in module.private_dns_a_records.private_dns_a_records : v.records]
+}
+output "private_dns_a_records_resource_group_name" {
+  description = "List of resource_group_name values across all private_dns_a_records"
+  value       = [for k, v in module.private_dns_a_records.private_dns_a_records : v.resource_group_name]
+}
+output "private_dns_a_records_tags" {
+  description = "List of tags values across all private_dns_a_records"
+  value       = [for k, v in module.private_dns_a_records.private_dns_a_records : v.tags]
+}
+output "private_dns_a_records_ttl" {
+  description = "List of ttl values across all private_dns_a_records"
+  value       = [for k, v in module.private_dns_a_records.private_dns_a_records : v.ttl]
+}
+output "private_dns_a_records_zone_name" {
+  description = "List of zone_name values across all private_dns_a_records"
+  value       = [for k, v in module.private_dns_a_records.private_dns_a_records : v.zone_name]
+}
+
+
+# --- azurerm_private_dns_aaaa_record ---
+output "private_dns_aaaa_records" {
+  description = "All private_dns_aaaa_record resources"
+  value       = module.private_dns_aaaa_records.private_dns_aaaa_records
+}
+output "private_dns_aaaa_records_fqdn" {
+  description = "List of fqdn values across all private_dns_aaaa_records"
+  value       = [for k, v in module.private_dns_aaaa_records.private_dns_aaaa_records : v.fqdn]
+}
+output "private_dns_aaaa_records_name" {
+  description = "List of name values across all private_dns_aaaa_records"
+  value       = [for k, v in module.private_dns_aaaa_records.private_dns_aaaa_records : v.name]
+}
+output "private_dns_aaaa_records_records" {
+  description = "List of records values across all private_dns_aaaa_records"
+  value       = [for k, v in module.private_dns_aaaa_records.private_dns_aaaa_records : v.records]
+}
+output "private_dns_aaaa_records_resource_group_name" {
+  description = "List of resource_group_name values across all private_dns_aaaa_records"
+  value       = [for k, v in module.private_dns_aaaa_records.private_dns_aaaa_records : v.resource_group_name]
+}
+output "private_dns_aaaa_records_tags" {
+  description = "List of tags values across all private_dns_aaaa_records"
+  value       = [for k, v in module.private_dns_aaaa_records.private_dns_aaaa_records : v.tags]
+}
+output "private_dns_aaaa_records_ttl" {
+  description = "List of ttl values across all private_dns_aaaa_records"
+  value       = [for k, v in module.private_dns_aaaa_records.private_dns_aaaa_records : v.ttl]
+}
+output "private_dns_aaaa_records_zone_name" {
+  description = "List of zone_name values across all private_dns_aaaa_records"
+  value       = [for k, v in module.private_dns_aaaa_records.private_dns_aaaa_records : v.zone_name]
+}
+
+
+# --- azurerm_private_dns_cname_record ---
+output "private_dns_cname_records" {
+  description = "All private_dns_cname_record resources"
+  value       = module.private_dns_cname_records.private_dns_cname_records
+}
+output "private_dns_cname_records_fqdn" {
+  description = "List of fqdn values across all private_dns_cname_records"
+  value       = [for k, v in module.private_dns_cname_records.private_dns_cname_records : v.fqdn]
+}
+output "private_dns_cname_records_name" {
+  description = "List of name values across all private_dns_cname_records"
+  value       = [for k, v in module.private_dns_cname_records.private_dns_cname_records : v.name]
+}
+output "private_dns_cname_records_record" {
+  description = "List of record values across all private_dns_cname_records"
+  value       = [for k, v in module.private_dns_cname_records.private_dns_cname_records : v.record]
+}
+output "private_dns_cname_records_resource_group_name" {
+  description = "List of resource_group_name values across all private_dns_cname_records"
+  value       = [for k, v in module.private_dns_cname_records.private_dns_cname_records : v.resource_group_name]
+}
+output "private_dns_cname_records_tags" {
+  description = "List of tags values across all private_dns_cname_records"
+  value       = [for k, v in module.private_dns_cname_records.private_dns_cname_records : v.tags]
+}
+output "private_dns_cname_records_ttl" {
+  description = "List of ttl values across all private_dns_cname_records"
+  value       = [for k, v in module.private_dns_cname_records.private_dns_cname_records : v.ttl]
+}
+output "private_dns_cname_records_zone_name" {
+  description = "List of zone_name values across all private_dns_cname_records"
+  value       = [for k, v in module.private_dns_cname_records.private_dns_cname_records : v.zone_name]
+}
+
+
+# --- azurerm_private_dns_mx_record ---
+output "private_dns_mx_records" {
+  description = "All private_dns_mx_record resources"
+  value       = module.private_dns_mx_records.private_dns_mx_records
+}
+output "private_dns_mx_records_fqdn" {
+  description = "List of fqdn values across all private_dns_mx_records"
+  value       = [for k, v in module.private_dns_mx_records.private_dns_mx_records : v.fqdn]
+}
+output "private_dns_mx_records_name" {
+  description = "List of name values across all private_dns_mx_records"
+  value       = [for k, v in module.private_dns_mx_records.private_dns_mx_records : v.name]
+}
+output "private_dns_mx_records_record" {
+  description = "List of record values across all private_dns_mx_records"
+  value       = [for k, v in module.private_dns_mx_records.private_dns_mx_records : v.record]
+}
+output "private_dns_mx_records_resource_group_name" {
+  description = "List of resource_group_name values across all private_dns_mx_records"
+  value       = [for k, v in module.private_dns_mx_records.private_dns_mx_records : v.resource_group_name]
+}
+output "private_dns_mx_records_tags" {
+  description = "List of tags values across all private_dns_mx_records"
+  value       = [for k, v in module.private_dns_mx_records.private_dns_mx_records : v.tags]
+}
+output "private_dns_mx_records_ttl" {
+  description = "List of ttl values across all private_dns_mx_records"
+  value       = [for k, v in module.private_dns_mx_records.private_dns_mx_records : v.ttl]
+}
+output "private_dns_mx_records_zone_name" {
+  description = "List of zone_name values across all private_dns_mx_records"
+  value       = [for k, v in module.private_dns_mx_records.private_dns_mx_records : v.zone_name]
+}
+
+
+# --- azurerm_private_dns_ptr_record ---
+output "private_dns_ptr_records" {
+  description = "All private_dns_ptr_record resources"
+  value       = module.private_dns_ptr_records.private_dns_ptr_records
+}
+output "private_dns_ptr_records_fqdn" {
+  description = "List of fqdn values across all private_dns_ptr_records"
+  value       = [for k, v in module.private_dns_ptr_records.private_dns_ptr_records : v.fqdn]
+}
+output "private_dns_ptr_records_name" {
+  description = "List of name values across all private_dns_ptr_records"
+  value       = [for k, v in module.private_dns_ptr_records.private_dns_ptr_records : v.name]
+}
+output "private_dns_ptr_records_records" {
+  description = "List of records values across all private_dns_ptr_records"
+  value       = [for k, v in module.private_dns_ptr_records.private_dns_ptr_records : v.records]
+}
+output "private_dns_ptr_records_resource_group_name" {
+  description = "List of resource_group_name values across all private_dns_ptr_records"
+  value       = [for k, v in module.private_dns_ptr_records.private_dns_ptr_records : v.resource_group_name]
+}
+output "private_dns_ptr_records_tags" {
+  description = "List of tags values across all private_dns_ptr_records"
+  value       = [for k, v in module.private_dns_ptr_records.private_dns_ptr_records : v.tags]
+}
+output "private_dns_ptr_records_ttl" {
+  description = "List of ttl values across all private_dns_ptr_records"
+  value       = [for k, v in module.private_dns_ptr_records.private_dns_ptr_records : v.ttl]
+}
+output "private_dns_ptr_records_zone_name" {
+  description = "List of zone_name values across all private_dns_ptr_records"
+  value       = [for k, v in module.private_dns_ptr_records.private_dns_ptr_records : v.zone_name]
+}
+
+
+# --- azurerm_private_dns_srv_record ---
+output "private_dns_srv_records" {
+  description = "All private_dns_srv_record resources"
+  value       = module.private_dns_srv_records.private_dns_srv_records
+}
+output "private_dns_srv_records_fqdn" {
+  description = "List of fqdn values across all private_dns_srv_records"
+  value       = [for k, v in module.private_dns_srv_records.private_dns_srv_records : v.fqdn]
+}
+output "private_dns_srv_records_name" {
+  description = "List of name values across all private_dns_srv_records"
+  value       = [for k, v in module.private_dns_srv_records.private_dns_srv_records : v.name]
+}
+output "private_dns_srv_records_record" {
+  description = "List of record values across all private_dns_srv_records"
+  value       = [for k, v in module.private_dns_srv_records.private_dns_srv_records : v.record]
+}
+output "private_dns_srv_records_resource_group_name" {
+  description = "List of resource_group_name values across all private_dns_srv_records"
+  value       = [for k, v in module.private_dns_srv_records.private_dns_srv_records : v.resource_group_name]
+}
+output "private_dns_srv_records_tags" {
+  description = "List of tags values across all private_dns_srv_records"
+  value       = [for k, v in module.private_dns_srv_records.private_dns_srv_records : v.tags]
+}
+output "private_dns_srv_records_ttl" {
+  description = "List of ttl values across all private_dns_srv_records"
+  value       = [for k, v in module.private_dns_srv_records.private_dns_srv_records : v.ttl]
+}
+output "private_dns_srv_records_zone_name" {
+  description = "List of zone_name values across all private_dns_srv_records"
+  value       = [for k, v in module.private_dns_srv_records.private_dns_srv_records : v.zone_name]
+}
+
+
+# --- azurerm_private_dns_txt_record ---
+output "private_dns_txt_records" {
+  description = "All private_dns_txt_record resources"
+  value       = module.private_dns_txt_records.private_dns_txt_records
+}
+output "private_dns_txt_records_fqdn" {
+  description = "List of fqdn values across all private_dns_txt_records"
+  value       = [for k, v in module.private_dns_txt_records.private_dns_txt_records : v.fqdn]
+}
+output "private_dns_txt_records_name" {
+  description = "List of name values across all private_dns_txt_records"
+  value       = [for k, v in module.private_dns_txt_records.private_dns_txt_records : v.name]
+}
+output "private_dns_txt_records_record" {
+  description = "List of record values across all private_dns_txt_records"
+  value       = [for k, v in module.private_dns_txt_records.private_dns_txt_records : v.record]
+}
+output "private_dns_txt_records_resource_group_name" {
+  description = "List of resource_group_name values across all private_dns_txt_records"
+  value       = [for k, v in module.private_dns_txt_records.private_dns_txt_records : v.resource_group_name]
+}
+output "private_dns_txt_records_tags" {
+  description = "List of tags values across all private_dns_txt_records"
+  value       = [for k, v in module.private_dns_txt_records.private_dns_txt_records : v.tags]
+}
+output "private_dns_txt_records_ttl" {
+  description = "List of ttl values across all private_dns_txt_records"
+  value       = [for k, v in module.private_dns_txt_records.private_dns_txt_records : v.ttl]
+}
+output "private_dns_txt_records_zone_name" {
+  description = "List of zone_name values across all private_dns_txt_records"
+  value       = [for k, v in module.private_dns_txt_records.private_dns_txt_records : v.zone_name]
+}
+
+
 # --- azurerm_private_dns_zone_virtual_network_link ---
 output "private_dns_zone_virtual_network_links" {
   description = "All private_dns_zone_virtual_network_link resources"
