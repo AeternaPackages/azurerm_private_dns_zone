@@ -80,12 +80,12 @@ EOT
     tags                = optional(map(string))
     soa_record = optional(object({
       email        = string
-      expire_time  = optional(number) # Default: 2419200
-      minimum_ttl  = optional(number) # Default: 10
-      refresh_time = optional(number) # Default: 3600
-      retry_time   = optional(number) # Default: 300
+      expire_time  = optional(number)
+      minimum_ttl  = optional(number)
+      refresh_time = optional(number)
+      retry_time   = optional(number)
       tags         = optional(map(string))
-      ttl          = optional(number) # Default: 3600
+      ttl          = optional(number)
     }))
     private_dns_a_records = optional(map(object({
       name                = string
@@ -111,7 +111,7 @@ EOT
     private_dns_mx_records = optional(map(object({
       resource_group_name = string
       ttl                 = number
-      name                = optional(string) # Default: "@"
+      name                = optional(string)
       tags                = optional(map(string))
       record = list(object({
         exchange   = string
@@ -150,7 +150,7 @@ EOT
       name                 = string
       resource_group_name  = string
       virtual_network_id   = string
-      registration_enabled = optional(bool) # Default: false
+      registration_enabled = optional(bool)
       resolution_policy    = optional(string)
       tags                 = optional(map(string))
     })))
